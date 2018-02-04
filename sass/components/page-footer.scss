@@ -1,0 +1,9 @@
+.page-footer {
+  background-color: $color-light-blue;
+
+  > .content {
+    width: $page-width;
+    padding: 40px $page-margin-side;
+    margin: auto;
+  }
+}

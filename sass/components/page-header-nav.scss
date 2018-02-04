@@ -1,0 +1,28 @@
+.page-header-nav {
+  > .items {
+    display: flex;
+    align-items: center;
+  }
+
+  > .items > .item.-logo {
+    flex-grow: 1;
+  }
+
+  > .items > .item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  > .items > .item > .link {
+    padding-bottom: 4px;
+    padding-top: 6px;
+    border-bottom: 2px solid transparent;
+  }
+
+  > .items > .item > .link {
+    display: block;
+  }
+
+  > .items > .item > .link.-active {
+    border-bottom-color: $color-yellow;
+  }
+}

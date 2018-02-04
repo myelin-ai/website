@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@import 'definitions';
+@import 'core/reset';
+@import 'core/normalize';
+@import 'core/basic';
+
+@import 'components/page-header.scss';
+@import 'components/page-header-nav.scss';
+@import 'components/page-footer';
+@import 'components/page-content';
+@import 'components/page-title';

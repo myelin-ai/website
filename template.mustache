@@ -4,22 +4,28 @@
     <meta charset="UTF-8"/>
     <meta name="description" title="{{config.description}}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/style.css"/>
     <title>{{title}}</title>
 </head>
 <body>
   <header class="page-header">
     <nav class="page-header-nav">
-      <a href="/" class="item -logo"><img src="/header-logo.png"
+      <ul class="items">
+        <li class="item -logo">
+          <a href="/" class="link"><img src="/header-logo.png"
              srcset="/header-logo.png 1x, /header-logo-2x.png 2x"
              alt="Myelin Logo"
              title="{{config.title}}"></a>
+        </li>
 
-      {{#nav}}
-        <a href="{{path}}"
-           class="item{{#is_active}} -active{{/is_active}}"
-           title="{{title}}">{{title}}</a>
-      {{/nav}}
+        {{#nav}}
+          <li class="item">
+            <a href="{{path}}"
+               class="link{{#is_active}} -active{{/is_active}}"
+               title="{{title}}">{{title}}</a>
+          </li>
+        {{/nav}}
+      </ul>
     </nav>
   </header>
   <main class="page-content">
