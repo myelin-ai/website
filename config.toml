@@ -9,3 +9,8 @@ title = "Team"
 [[pages]]
 path = "/"
 file = "index"
+
+[[pages]]
+path = "/vision"
+file = "vision"
+title = "Vision"
