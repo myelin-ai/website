@@ -2,7 +2,7 @@
 import toml
 import pystache
 from os import path
-import os
+from datetime import date
 
 PAGES_FOLDER = 'pages'
 PUBLIC_FOLDER = 'public'
@@ -33,7 +33,14 @@ for page in config['pages']:
     else:
         title = config['title']
 
-    context = { 'nav': nav, 'config': config, 'page': page, 'title': title }
+    context = {
+        'nav': nav,
+        'config': config,
+        'page': page,
+        'title': title,
+        'year': date.today().year,
+    }
+
     context['content'] = pystache.render(page_template, context)
 
     page_html = pystache.render(template, context)
