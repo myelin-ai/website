@@ -1,0 +1,8 @@
+localhost:8080
+
+root public
+tls off
+
+rewrite {
+  to {path} {path}.html
+}

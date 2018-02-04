@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" title="{{config.description}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <title>{{title}}</title>
+</head>
+<body>
+  <header class="page-header">
+    <nav class="page-header-nav">
+      <a href="/" class="item -logo"><img src="/header-logo.png"
+             srcset="/header-logo.png 1x, /header-logo-2x.png 2x"
+             alt="Myelin Logo"
+             title="{{config.title}}"></a>
+
+      {{#nav}}
+        <a href="{{path}}"
+           class="item{{#is_active}} -active{{/is_active}}"
+           title="{{title}}">{{title}}</a>
+      {{/nav}}
+    </nav>
+  </header>
+  <main class="page-content">
+    {{{content}}}
+  </main>
+  <footer class="page-footer">
+    <div class="content">
+      © {{year}} Myelin
+    </div>
+  </footer>
+</body>
+</html>

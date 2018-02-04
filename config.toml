@@ -1,0 +1,11 @@
+title = "Myelin"
+description = "Designing the Future of Artifical Intelligence"
+
+[[pages]]
+path = "/team"
+file = "team"
+title = "Team"
+
+[[pages]]
+path = "/"
+file = "index"
