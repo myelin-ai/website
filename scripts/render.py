@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import toml
 import pystache
+import htmlmin
 from os import path
 from datetime import date
 
@@ -43,7 +44,11 @@ for page in config['pages']:
 
     context['content'] = pystache.render(page_template, context)
 
-    page_html = pystache.render(template, context)
+    page_html = htmlmin.minify(
+        pystache.render(template, context),
+        remove_optional_attribute_quotes=False,
+        remove_empty_space=True,
+    )
 
     with open(path.join(PUBLIC_FOLDER, page['file'] + '.html'), 'w') as f:
         f.write(page_html)
