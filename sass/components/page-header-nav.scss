@@ -12,17 +12,20 @@
     margin-right: 24px;
   }
 
-  > .items > .item > .link {
+  > .items > .item:not(.-logo) > .link {
     padding-bottom: 4px;
     padding-top: 6px;
     border-bottom: 2px solid transparent;
+    transition: border-color .125s;
   }
 
   > .items > .item > .link {
-    display: block;
+    display: inline-block;
   }
 
-  > .items > .item > .link.-active {
+  > .items > .item > .link.-active,
+  > .items > .item:not(.-logo) > .link:hover,
+  > .items > .item:not(.-logo) > .link:focus, {
     border-bottom-color: $color-yellow;
   }
 }
