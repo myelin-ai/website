@@ -25,4 +25,11 @@
   > .link {
     grid-area: link;
   }
+
+  @media (max-width: 930px) {
+    > .avatar {
+      width: 96px;
+      height: 96px;
+    }
+  }
 }
