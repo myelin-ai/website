@@ -9,8 +9,7 @@ addons:
   apt:
     packages:
     - rpm
-    - ruby-full
-    - rubygems
+    - ruby
 
 install:
 - gem install sass
