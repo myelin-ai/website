@@ -1,4 +1,9 @@
 .page-header-nav {
+  width: $page-width;
+  max-width: 100%;
+  padding: 18px $page-margin-side;
+  margin: auto;
+
   > .items {
     display: flex;
     align-items: center;
@@ -6,6 +11,7 @@
 
   > .items > .item.-logo {
     flex-grow: 1;
+    line-height: 1;
   }
 
   > .items > .item:not(:last-child) {

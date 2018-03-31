@@ -1,0 +1,28 @@
+.team-member {
+  display: grid;
+  grid-template: 'avatar .'
+                 'avatar name'
+                 'avatar link'
+                 'avatar .';
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 25px;
+  grid-row-gap: 8px;
+
+  > .avatar {
+    grid-area: avatar;
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+  }
+
+  > .name {
+    grid-area: name;
+    font-size: 24px;
+  }
+
+  > .link {
+    grid-area: link;
+  }
+}

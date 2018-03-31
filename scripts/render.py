@@ -40,6 +40,7 @@ for page in config['pages']:
         'page': page,
         'title': title,
         'year': date.today().year,
+        'people': config['people'],
     }
 
     context['content'] = pystache.render(page_template, context)
