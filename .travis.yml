@@ -9,7 +9,11 @@ addons:
   apt:
     packages:
     - rpm
-    - sass
+    - ruby-full
+    - rubygems
+
+install:
+- gem install sass
 
 script:
 - './scripts/build.sh'
