@@ -30,7 +30,7 @@ deploy:
   file: travis-build/myelin-website.rpm
   on:
     repo: MyelinAI/website
-    branch: static-page
+    branch: master
 
 after_deploy:
 - 'curl -H "Authorization: Token travis:$TOBY_SECRET" -X POST http://myelin.ch:8629/v1/jobs/website'
