@@ -2,7 +2,8 @@
 
 mkdir -p $HOME/rpmbuild/SOURCES
 rm $HOME/rpmbuild/SOURCES/root.tar.gz
-tar -zcvf $HOME/rpmbuild/SOURCES/root.tar.gz ./config ./public
+tar -zcvf $HOME/rpmbuild/SOURCES/root.tar.gz \
+          ./config ./public
 
 rpmbuild -bb package.spec --define "_release $TRAVIS_JOB_ID"
 

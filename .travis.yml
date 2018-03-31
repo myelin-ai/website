@@ -1,6 +1,6 @@
 sudo: false
 dist: trusty
-language: generic
+language: python
 
 notifications:
   email: false
@@ -9,8 +9,10 @@ addons:
   apt:
     packages:
     - rpm
+    - sassc
 
 script:
+- './scripts/build.sh'
 - './scripts/package.sh'
 
 deploy:
