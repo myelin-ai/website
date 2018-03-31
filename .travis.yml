@@ -5,12 +5,12 @@ language: generic
 notifications:
   email: false
 
-  addons:
+addons:
   apt:
     packages:
     - rpm
 
-    script:
+script:
 - './scripts/package.sh'
 
 deploy:
