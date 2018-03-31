@@ -4,9 +4,23 @@ import pystache
 import htmlmin
 from os import path
 from datetime import date
+import getopt
+import sys
 
 PAGES_FOLDER = 'pages'
 PUBLIC_FOLDER = 'public'
+
+try:
+    opts, args = getopt.getopt(sys.argv[1:], "", ["css-file="])
+except getopt.GetoptError as err:
+    print(err)
+    sys.exit(2)
+
+css_file = 'style.css'
+
+for opt, val in opts:
+    if opt == '--css-file':
+        css_file = val
 
 with open('config.toml') as f:
     config = toml.loads(f.read())
@@ -41,6 +55,7 @@ for page in config['pages']:
         'title': title,
         'year': date.today().year,
         'people': config['people'],
+        'css_file': css_file,
     }
 
     context['content'] = pystache.render(page_template, context)
