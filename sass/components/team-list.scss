@@ -1,0 +1,9 @@
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 42px 64px;
+
+  @media (max-width: 930px) {
+    grid-template-columns: 1fr;
+  }
+}

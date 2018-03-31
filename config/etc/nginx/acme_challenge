@@ -1,0 +1,4 @@
+location '/.well-known/acme-challenge' {
+    root /usr/share/nginx/html;
+    default_type 'text/plain';
+}

@@ -1,0 +1,37 @@
+.page-header-nav {
+  width: $page-width;
+  max-width: 100%;
+  padding: 18px $page-margin-side;
+  margin: auto;
+
+  > .items {
+    display: flex;
+    align-items: center;
+  }
+
+  > .items > .item.-logo {
+    flex-grow: 1;
+    line-height: 1;
+  }
+
+  > .items > .item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  > .items > .item:not(.-logo) > .link {
+    padding-bottom: 4px;
+    padding-top: 6px;
+    border-bottom: 2px solid transparent;
+    transition: border-color .125s;
+  }
+
+  > .items > .item > .link {
+    display: inline-block;
+  }
+
+  > .items > .item > .link.-active,
+  > .items > .item:not(.-logo) > .link:hover,
+  > .items > .item:not(.-logo) > .link:focus, {
+    border-bottom-color: $color-yellow;
+  }
+}

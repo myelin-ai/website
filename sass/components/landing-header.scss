@@ -1,0 +1,26 @@
+.landing-header {
+  > .title {
+    @extend .page-title;
+    line-height: 1.5;
+  }
+
+  > .links {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    align-items: center;
+    grid-gap: 24px;
+    margin-top: 24px;
+  }
+
+  > .footnote {
+    margin-top: 8px;
+    font-size: 14px;
+    max-width: 18em;
+    color: $color-light-gray;
+  }
+
+  > .footnote > a {
+    font-weight: bold;
+  }
+}

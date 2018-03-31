@@ -1,0 +1,7 @@
+[Unit]
+Description=Renews the TLS certificates
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/renew-certs
+ExecStartPost=/usr/bin/systemctl restart nginx

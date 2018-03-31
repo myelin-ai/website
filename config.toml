@@ -1,0 +1,36 @@
+title = "Myelin"
+description = "Designing the Future of Artifical Intelligence"
+
+[[pages]]
+path = "/team"
+file = "team"
+title = "Team"
+
+[[pages]]
+path = "/"
+file = "index"
+
+# [[pages]]
+# path = "/vision"
+# file = "vision"
+# title = "Vision"
+
+[[people]]
+name = "Jan Nils Ferner"
+link = "github.com/jnferner"
+image_url = "https://avatars2.githubusercontent.com/u/9047632"
+
+[[people]]
+name = "Ruben Schmidmeister"
+link = "rubys.ninja"
+image_url = "https://avatars2.githubusercontent.com/u/4602612"
+
+[[people]]
+name = "Mathias Fischler"
+link = "github.com/Mafii"
+image_url = "https://avatars2.githubusercontent.com/u/10061519"
+
+[[people]]
+name = "Jeremy Stucki"
+link = "github.com/jeremystucki"
+image_url = "https://avatars2.githubusercontent.com/u/7629727"
