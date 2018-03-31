@@ -17,20 +17,20 @@ file = "index"
 
 [[people]]
 name = "Jan Nils Ferner"
-link = "github.com/jnferner"
+username = "jnferner"
 image_url = "https://avatars2.githubusercontent.com/u/9047632"
 
 [[people]]
 name = "Ruben Schmidmeister"
-link = "rubys.ninja"
+username = "bash"
 image_url = "https://avatars2.githubusercontent.com/u/4602612"
 
 [[people]]
 name = "Mathias Fischler"
-link = "github.com/Mafii"
+username = "Mafii"
 image_url = "https://avatars2.githubusercontent.com/u/10061519"
 
 [[people]]
 name = "Jeremy Stucki"
-link = "github.com/jeremystucki"
+username = "jeremystucki"
 image_url = "https://avatars2.githubusercontent.com/u/7629727"
