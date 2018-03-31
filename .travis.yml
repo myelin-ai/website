@@ -15,6 +15,7 @@ script:
 
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: ZeAp1/E3bUTlVcHTtyKN3+te9CyR4s69a2n00/YbDXidQ1EERMoKbpN5YSAMUu94K0Wq3ab+n726e00M32hFs2amY5rSLnB3iR4piPezqGH/+RE/RoyJez0KqI9pf4+SXjB4F/hOElzhPYKwq4TAm90ouJ38DAfB1Ck9PL/BLo2Nz4h+W05Daerb3cqdYUBM93vAvbezQ3PDPUnFZP8XzQ9ViRR0pF+UqSTXxNXNueWikc2jUvXBp3VUXvuTPCUQ+rMGALHqTgfaRLhX5LqzfQ97CBIy/bxh/S7K+hCfzSkqKZS6X5z4LH8vA7vZcu6eEuH8QJep9LQnneAFi2XMnyiYpfN8T7FZHR3f//1GMFJajs0cW27EtCOxd20EvmbKqqA01d00iNyYoMtL0lT5ssfrz5m1c90wdyZKc3nfCtlhMTANX6BAftP7nZCKzyVjPmvW0LYFBYxP8BqkNUvDHxGfGCoHLPyCGPZt+voReiwuXi6PyYpZ3+dPLkXTpjt77ieNdJDt2taKuZNogLr0Hi+ZQfI1sBFpO26LyA/cC8+vkvBoVXhQV/2W/8exe+4KIxhDos/KWXZR/hT5h0190Eenk/LSPQiuxW4QYpicYl1AnLbrOk3meNaj4XqyAhoKSuc7RTeoMoeSq7PgHj2kUTM8nggW/cEdXkXH07MGkMc=
   file: travis-build/myelin-website.rpm
