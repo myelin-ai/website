@@ -16,7 +16,7 @@ To run a watcher that automatically rebuilds on changes run:
 
 ### Dependencies
 
-- sassc (`brew install sassc`)
+- sass (`gem install sass`)
 - entr (`brew install entr`)
 - python3 (`brew install python3`)
 - Pip dependencies (`pip3 install -r requirements.txt`)

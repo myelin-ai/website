@@ -9,7 +9,7 @@ addons:
   apt:
     packages:
     - rpm
-    - sassc
+    - sass
 
 script:
 - './scripts/build.sh'
