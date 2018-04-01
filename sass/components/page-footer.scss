@@ -1,10 +1,25 @@
 .page-footer {
-  background-color: $color-light-blue;
+  background-color: $color-dark-blue;
+  color: #fff;
+  font-weight: 500;
 
   > .content {
     width: $page-width;
     max-width: 100%;
     padding: 40px $page-margin-side;
     margin: auto;
+  }
+
+  > .content > .info {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  > .content > .info > .link {
+    font-weight: 600;
+  }
+
+  > .content > .info > .link:hover {
+    text-decoration: underline;
   }
 }

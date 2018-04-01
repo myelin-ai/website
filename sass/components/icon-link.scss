@@ -1,6 +1,7 @@
 .icon-link {
   display: inline-flex;
   align-items: center;
+  font-size: 16px;
 
   > .label {
     padding-top: 4px;
@@ -10,8 +11,8 @@
   }
 
   > .icon {
-    width: 24px;
-    height: 24px;
+    width: 1.333em;
+    height: 1.333em;
     margin-right: 6px;
   }
 
