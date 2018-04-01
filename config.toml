@@ -34,3 +34,19 @@ image_url = "https://avatars2.githubusercontent.com/u/10061519"
 name = "Jeremy Stucki"
 username = "jeremystucki"
 image_url = "https://scontent-frt3-2.cdninstagram.com/vp/02042a2b5cdf8429720fab715e4b63b1/5B6FF5A7/t51.2885-19/s320x320/28751995_169444467190363_7591796261267701760_n.jpg"
+
+[[assets]]
+source = "style.css"
+name = "style"
+
+[[assets]]
+source = "header-logo-2x.png"
+name = "header_logo_2x"
+
+[[assets]]
+source = "header-logo.png"
+name = "header_logo"
+
+[[assets]]
+source = "github-icon.svg"
+name = "github_icon"

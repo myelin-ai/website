@@ -1,3 +1,5 @@
-/public/*.html
-/public/**/*.css
+*.css
+__pycache__/
 /.sass-cache/
+/public/*.html
+/public/static/

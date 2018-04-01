@@ -2,23 +2,14 @@
 
 set -e
 
-version_file() {
-    FILE="$1"
-    PREFIX="public"
-    EXTENSION="${FILE##*.}"
-    FILENAME="${FILE%.*}"
-    VERSIONED="$FILENAME-$(shasum "$PREFIX/$FILE" | awk '{print $1}' | cut -c1-10).$EXTENSION"
-
-    mv "$PREFIX/$FILE" "$PREFIX/$VERSIONED"
-
-    echo $VERSIONED
-}
-
-tput setaf 6
-echo "[$(date +%H:%M:%S)] Building..."
-tput sgr0
+printf "$(tput bold)$(date +%H:%M:%S)$(tput sgr0) Building... "
 
 mkdir -p public/static
-sass sass/style.scss --style compressed > public/static/style.css
 
-./scripts/render.py --css-file=$(version_file static/style.css)
+sass sass/style.scss --style compressed > assets/style.css
+
+./scripts/build.py
+
+tput setaf 2
+echo "done"
+tput sgr0
