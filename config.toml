@@ -8,8 +8,11 @@ file = "team"
 title = "Team"
 
 [[pages]]
-path = "/"
 file = "index"
+
+[[pages]]
+file = "_404"
+title = "Page Not Found"
 
 # [[pages]]
 # path = "/vision"

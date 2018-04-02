@@ -24,11 +24,16 @@ def render(config, assets):
 
         nav = []
         for nav_page in config['pages']:
-            if 'title' in nav_page:
+            if 'nav' in nav_page:
+                is_active = False
+
+                if 'path' in page:
+                    is_active = (nav_page['path'] == page['path'])
+
                 nav.append({
                     'path': nav_page['path'],
                     'title': nav_page['title'],
-                    'is_active': nav_page['path'] == page['path'],
+                    'is_active': is_active,
                 })
 
         if 'title' in page:
