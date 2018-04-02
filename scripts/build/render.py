@@ -24,7 +24,7 @@ def render(config, assets):
 
         nav = []
         for nav_page in config['pages']:
-            if 'nav' in nav_page:
+            if 'path' in nav_page:
                 is_active = False
 
                 if 'path' in page:
