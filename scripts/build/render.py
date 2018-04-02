@@ -12,6 +12,10 @@ def render(config, assets):
     with open('template.mustache') as f:
         template = f.read()
 
+    for person in config['people']:
+        if 'image' in person:
+            person['image_url'] = assets[person['image']]
+
     for page in config['pages']:
         page_file = path.join(PAGES_FOLDER, page['file'] + '.mustache')
 
