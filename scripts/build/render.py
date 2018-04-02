@@ -40,6 +40,7 @@ def render(config, assets):
             'nav': nav,
             'config': config,
             'page': page,
+            'page_file': page_file,
             'title': title,
             'year': date.today().year,
             'people': config['people'],

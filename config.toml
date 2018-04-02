@@ -1,5 +1,6 @@
 title = "Myelin"
 description = "Designing the Future of Artifical Intelligence"
+website_repo = "MyelinAI/website"
 
 [[pages]]
 path = "/team"
