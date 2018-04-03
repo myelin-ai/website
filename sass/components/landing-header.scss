@@ -6,21 +6,39 @@
 
   > .links {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: max-content;
+    grid-gap: 4px 24px;
     align-items: center;
-    grid-gap: 24px;
-    margin-top: 24px;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: 'button link' 'footnote .';
   }
 
-  > .footnote {
-    margin-top: 8px;
+  > .links > .button {
+    grid-area: button;
+  }
+
+  > .links > .link {
+    grid-area: link;
+  }
+
+  > .links > .footnote {
+    grid-area: footnote;
     font-size: 14px;
     max-width: 18em;
     color: $color-light-gray;
+    min-width: 100%;
   }
 
-  > .footnote > a {
+  > .links > .footnote > a {
     font-weight: bold;
+  }
+
+  @media (max-width: 406px) {
+    > .links {
+      grid-template-areas: 'button' 'footnote' 'link';
+    }
+
+    > .links > .link {
+      margin-top: 8px;
+    }
   }
 }
