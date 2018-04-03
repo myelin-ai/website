@@ -1,6 +1,5 @@
 title = "Myelin"
 description = "Designing the Future of Artifical Intelligence"
-website_repo = "MyelinAI/website"
 
 [[pages]]
 path = "/team"
@@ -19,42 +18,42 @@ title = "Page Not Found"
 # file = "vision"
 # title = "Vision"
 
-[[people]]
+
+[additional]
+website_repo = "MyelinAI/website"
+
+[[additional.people]]
 name = "Jan Nils Ferner"
 username = "jnferner"
 image_url = "https://avatars2.githubusercontent.com/u/9047632"
 
-[[people]]
+[[additional.people]]
 name = "Ruben Schmidmeister"
 username = "bash"
 image_url = "https://avatars2.githubusercontent.com/u/4602612"
 
-[[people]]
+[[additional.people]]
 name = "Mathias Fischler"
 username = "Mafii"
 image_url = "https://avatars2.githubusercontent.com/u/10061519"
 
-[[people]]
+[[additional.people]]
 name = "Jeremy Stucki"
 username = "jeremystucki"
-image = "jeremy"
+image_url = "assets://jeremy"
 
-[[assets]]
-source = "style.css"
-name = "style"
 
-[[assets]]
-source = "header-logo-2x.png"
-name = "header_logo_2x"
+[assets.style]
+source = "sass/style.scss"
 
-[[assets]]
-source = "header-logo.png"
-name = "header_logo"
+[assets.header_logo_2x]
+source = "assets/header-logo-2x.png"
 
-[[assets]]
-source = "github-icon.svg"
-name = "github_icon"
+[assets.header_logo]
+source = "assets/header-logo.png"
 
-[[assets]]
-source = "jeremy.jpg"
-name = "jeremy"
+[assets.github_icon]
+source = "assets/github-icon.svg"
+
+[assets.jeremy]
+source = "assets/jeremy.jpg"
