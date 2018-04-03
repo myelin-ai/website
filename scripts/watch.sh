@@ -1,5 +1,6 @@
 while true; do
     ls -d pages/* \
+          assets/* \
           sass/* \
           sass/core/* \
           sass/components/* \
