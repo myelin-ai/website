@@ -1,4 +1,5 @@
 add_header X-Frame-Options deny;
 add_header X-Xss-Protection '1; mode=block';
 add_header X-Content-Type-Options nosniff;
-add_header Referrer-Policy strict-origin-when-cross-origin;
+add_header Referrer-Policy "origin-when-cross-origin, strict-origin-when-cross-origin";
+add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://avatars2.githubusercontent.com; font-src 'self'; connect-src 'self'; media-src 'self'; object-src 'none'; child-src 'none'; frame-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; disown-opener; require-sri-for script style;";
