@@ -42,18 +42,10 @@ name = "Jeremy Stucki"
 username = "jeremystucki"
 image_url = "assets://jeremy"
 
+[assets]
+style = { source = "sass/style.scss" }
+header_logo_2x = { source = "assets/header-logo-2x.png" }
+header_logo = { source = "assets/header-logo.png" }
+github_icon = { source = "assets/github-icon.svg" }
+jeremy = { source = "assets/jeremy.jpg" }
 
-[assets.style]
-source = "sass/style.scss"
-
-[assets.header_logo_2x]
-source = "assets/header-logo-2x.png"
-
-[assets.header_logo]
-source = "assets/header-logo.png"
-
-[assets.github_icon]
-source = "assets/github-icon.svg"
-
-[assets.jeremy]
-source = "assets/jeremy.jpg"
