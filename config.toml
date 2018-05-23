@@ -30,7 +30,7 @@ image_url = "https://avatars2.githubusercontent.com/u/9047632"
 [[additional.people]]
 name = "Ruben Schmidmeister"
 username = "bash"
-image_url = "https://avatars2.githubusercontent.com/u/4602612"
+image_url = "assets://ruben"
 
 [[additional.people]]
 name = "Mathias Fischler"
@@ -48,4 +48,4 @@ header_logo_2x = { source = "assets/header-logo-2x.png" }
 header_logo = { source = "assets/header-logo.png" }
 github_icon = { source = "assets/github-icon.svg" }
 jeremy = { source = "assets/jeremy.jpg" }
-
+ruben = { source = "assets/ruben.jpg" }
