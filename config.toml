@@ -1,23 +1,24 @@
 title = "Myelin"
 description = "Designing the Future of Artifical Intelligence"
+url_prefix = "https://www.myelin.ch"
 
 [[pages]]
-path = "/team"
-file = "team"
-title = "Team"
-
-[[pages]]
+path = "/"
 file = "index"
 
 [[pages]]
 file = "_404"
 title = "Page Not Found"
 
+[[pages]]
+path = "/team"
+file = "team"
+title = "Team"
+
 # [[pages]]
 # path = "/vision"
 # file = "vision"
 # title = "Vision"
-
 
 [additional]
 website_repo = "MyelinAI/website"

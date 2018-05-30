@@ -1,1 +1,1 @@
-git+git://github.com/bash/gilderoy.git@50300b11dccd709cb21e10a8414f4e4f7d18ac87#egg=gilderoy
+git+git://github.com/bash/gilderoy.git@8a56d03f4a6d1f5b77ab9bf524c1acfff6d10f06#egg=gilderoy
