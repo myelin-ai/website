@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /_404
+Sitemap: https://www.myelin.ch/sitemap.xml
