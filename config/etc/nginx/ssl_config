@@ -9,4 +9,4 @@ ssl_prefer_server_ciphers on;
 ssl_dhparam /etc/nginx/dhparams.pem;
 
 # force browser to use https for 180 days
-add_header Strict-Transport-Security max-age=15552000;
+add_header Strict-Transport-Security max-age=15552000 always;
