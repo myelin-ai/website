@@ -1,6 +1,6 @@
 # website
 
-[![Build Status](https://travis-ci.org/MyelinAI/website.svg?branch=master)](https://travis-ci.org/MyelinAI/website)
+[![Build Status](https://travis-ci.org/myelin-ai/website.svg?branch=master)](https://travis-ci.org/myelin-ai/website)
 
 ## Building
 
