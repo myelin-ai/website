@@ -21,7 +21,7 @@ title = "Team"
 # title = "Vision"
 
 [additional]
-website_repo = "MyelinAI/website"
+website_repo = "myelin-ai/website"
 
 [[additional.people]]
 name = "Jan Nils Ferner"
