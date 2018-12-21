@@ -3,7 +3,7 @@
 root public
 tls off
 
-header / Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://avatars2.githubusercontent.com; font-src 'self'; connect-src 'self'; media-src 'self'; object-src 'none'; child-src 'none'; frame-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; disown-opener; require-sri-for script style;"
+header / Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://avatars2.githubusercontent.com; font-src 'self'; connect-src 'self' https://whitepaper.myelin.ch; media-src 'self'; object-src 'none'; child-src 'none'; frame-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; disown-opener; require-sri-for script style;"
 
 header / Referrer-Policy "origin-when-cross-origin, strict-origin-when-cross-origin";
 
