@@ -46,6 +46,7 @@ image_url = "assets://jeremy"
 
 [assets]
 style = { source = "sass/style.scss" }
+whitepaper_js = { source = "assets/whitepaper.js" }
 header_logo_2x = { source = "assets/header-logo-2x.png" }
 header_logo = { source = "assets/header-logo.png" }
 github_icon = { source = "assets/github-icon.svg" }
