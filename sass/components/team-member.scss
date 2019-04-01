@@ -19,7 +19,7 @@
 
   > .name {
     grid-area: name;
-    font-size: 24px;
+    font-size: var(--heading-2-font-size);
   }
 
   > .link {

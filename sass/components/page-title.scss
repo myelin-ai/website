@@ -1,6 +1,7 @@
 .page-title {
-  font-size: 48px;
+  font-size: var(--heading-1-font-size);
   font-weight: bold;
   max-width: 546px;
   margin-bottom: 36px;
+  line-height: var(--heading-1-line-height);
 }

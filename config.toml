@@ -51,3 +51,4 @@ header_logo = { source = "assets/header-logo.svg" }
 github_icon = { source = "assets/github-icon.svg" }
 jeremy = { source = "assets/jeremy.jpg" }
 ruben = { source = "assets/ruben.jpg" }
+wave_line = { source = "assets/wave-line.svg" }
