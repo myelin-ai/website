@@ -7,6 +7,7 @@ $page-margin-side: 24px;
   --black-color: #292929;
   --light-gray-color: #B2B2B2;
   --header-background-color: #FCF9F9;
+  --header-logo-color: var(--primary-color);
   --text-color: var(--black-color);
   --info-text-color: var(--light-gray-color);
   --link-color: var(--secondary-color);
@@ -21,7 +22,10 @@ $page-margin-side: 24px;
     --text-color: #fff;
     --link-color: #fff;
     --header-background-color: rgba(0, 0, 0, .1);
-    background-color: var(--black-color);
+    --header-color: #fff;
+    --header-logo-color: #fff;
+    --background-color: var(--black-color);
+    background-color: var(--background-color);
   }
 }
 

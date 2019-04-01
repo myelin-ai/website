@@ -12,7 +12,7 @@
   > .items > .item.-logo {
     flex-grow: 1;
     line-height: 1;
-    color: var(--primary-color);
+    color: var(--header-logo-color);
   }
 
   > .items > .item:not(:last-child) {
