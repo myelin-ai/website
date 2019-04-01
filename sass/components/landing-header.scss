@@ -1,7 +1,6 @@
 .landing-header {
   > .title {
     @extend .page-title;
-    line-height: 1.5;
   }
 
   > .links {
@@ -24,7 +23,7 @@
     grid-area: footnote;
     font-size: 14px;
     max-width: 18em;
-    color: $color-light-gray;
+    color: var(--info-text-color);
     min-width: 100%;
   }
 

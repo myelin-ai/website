@@ -47,8 +47,11 @@ image_url = "assets://jeremy"
 [assets]
 style = { source = "sass/style.scss" }
 whitepaper_js = { source = "assets/whitepaper.js" }
-header_logo_2x = { source = "assets/header-logo-2x.png" }
-header_logo = { source = "assets/header-logo.png" }
+header_logo = { source = "assets/header-logo.svg" }
 github_icon = { source = "assets/github-icon.svg" }
 jeremy = { source = "assets/jeremy.jpg" }
 ruben = { source = "assets/ruben.jpg" }
+wave_line = { source = "assets/wave-line.svg" }
+brain_icon = { source = "assets/icons/brain.svg" }
+helix_icon = { source = "assets/icons/helix.svg" }
+processor_icon = { source = "assets/icons/processor.svg" }

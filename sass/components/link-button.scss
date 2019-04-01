@@ -1,23 +1,25 @@
 .link-button {
   display: inline-block;
-  background-color: $color-yellow;
+  background-color: var(--button-color);
+  color: #fff;
   border-radius: 6px;
   padding: 14px 24px;
   transition: box-shadow .125s ease-in-out;
   cursor: pointer;
+  text-align: center;
 
   &.-disabled {
-    background-color: $color-light-gray;
+    background-color: var(--info-text-color);
     color: #fff;
     pointer-events: none;
   }
 
   &:not(.-disabled):hover,
   &:not(.-disabled):focus {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 3px lighten($color-yellow, 10%);
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--button-color);
   }
 
   &:not(.-disabled):active {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 3px lighten($color-yellow, 10%);
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--button-color);
   }
 }

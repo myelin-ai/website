@@ -14,10 +14,11 @@
     <nav class="page-header-nav">
       <ul class="items">
         <li class="item -logo">
-          <a href="/" class="link"><img src="{{assets.header_logo}}"
-             srcset="{{assets.header_logo}} 1x, {{assets.header_logo_2x}} 2x"
-             alt="Myelin Logo"
-             title="Myelin Logo"></a>
+          <a href="/" class="link" aria-label="Go to homepage">
+            <svg width="149" height="62">
+                <use xlink:href="{{assets.header_logo}}#logo" href="{{assets.header_logo}}#logo"></use>
+            </svg>
+          </a>
         </li>
 
         <li class="item">
@@ -41,11 +42,9 @@
   </main>
   <footer class="page-footer">
     <div class="content">
-      <div class="copyright">© {{year}} Myelin</div>
+      <div class="copyright">© {{year}} Myelin Research Group</div>
       <div class="info">
-        Logo by <a href="https://github.com/StefanieJaeger" class="link">@StefanieJaeger</a>.
         Feather Icons by <a href="https://github.com/colebemis" class="link">@colebemis</a>.
-        <br />
         <a href="https://github.com/{{additional.website_repo}}/edit/master/{{page_file}}" class="link">Improve this page</a>
       </div>
     </div>
