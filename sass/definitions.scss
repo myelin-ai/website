@@ -1,11 +1,27 @@
+$page-width: 1000px;
+$page-margin-side: 24px;
+
 :root {
   --primary-color: #428352;
   --secondary-color: #924A6C;
-  --text-color: #292929;
+  --black-color: #292929;
+  --light-gray-color: #B2B2B2;
+  --header-background-color: #FCF9F9;
+  --text-color: var(--black-color);
+  --info-text-color: var(--light-gray-color);
   --link-color: var(--secondary-color);
+  --button-color: var(--secondary-color);
   --heading-1-font-size: 48px;
   --heading-1-line-height: 1.5;
   --heading-2-font-size: 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #fff;
+    --header-background-color: rgba(0, 0, 0, .1);
+    background-color: var(--black-color);
+  }
 }
 
 @media (max-width: 930px) {
@@ -14,13 +30,3 @@
     --heading-2-font-size: 20px;
   }
 }
-
-$color-blue: #003D75;
-$color-dark-blue: #002140;
-$color-light-blue: #ECF1F5;
-$color-lighter-blue: #F2F8FC;
-$color-light-gray: #B2B2B2;
-$color-yellow: #FFB200;
-
-$page-width: 1000px;
-$page-margin-side: 24px;

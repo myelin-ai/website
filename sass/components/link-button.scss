@@ -1,6 +1,6 @@
 .link-button {
   display: inline-block;
-  background-color: var(--link-color);
+  background-color: var(--button-color);
   color: #fff;
   border-radius: 6px;
   padding: 14px 24px;
@@ -9,17 +9,17 @@
   text-align: center;
 
   &.-disabled {
-    background-color: $color-light-gray;
+    background-color: var(--info-text-color);
     color: #fff;
     pointer-events: none;
   }
 
   &:not(.-disabled):hover,
   &:not(.-disabled):focus {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--link-color);
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--button-color);
   }
 
   &:not(.-disabled):active {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--link-color);
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--button-color);
   }
 }
