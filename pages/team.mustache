@@ -1,26 +1,28 @@
-<h1 class="page-title">Team</h1>
+<div class="page-content">
+    <h1 class="page-title">Team</h1>
 
-<ul class="team-list">
-    {{#additional.people}}
-        <li class="member">
-            <div class="team-member">
-                <img class="avatar"
-                    src="{{image_url}}?s=128"
-                    srcset="{{image_url}}?s=128 1x, {{image_url}}?s=256 2x"
-                    alt="{{name}}" />
+    <ul class="team-list">
+        {{#additional.people}}
+            <li class="member">
+                <div class="team-member">
+                    <img class="avatar"
+                        src="{{image_url}}?s=128"
+                        srcset="{{image_url}}?s=128 1x, {{image_url}}?s=256 2x"
+                        alt="{{name}}" />
 
-                <span class="name">{{name}}</span>
+                    <span class="name">{{name}}</span>
 
-                <span class="link">
-                    <a class="icon-link" href="https://github.com/{{username}}">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                            <use xlink:href="{{assets.github_icon}}#icon"></use>
-                        </svg>
+                    <span class="link">
+                        <a class="icon-link" href="https://github.com/{{username}}">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <use xlink:href="{{assets.github_icon}}#icon"></use>
+                            </svg>
 
-                        <span class="label">{{username}}</span>
-                    </a>
-                </span>
-            </div>
-        </li>
-    {{/additional.people}}
-</ul>
+                            <span class="label">{{username}}</span>
+                        </a>
+                    </span>
+                </div>
+            </li>
+        {{/additional.people}}
+    </ul>
+</div>
