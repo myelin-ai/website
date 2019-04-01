@@ -6,7 +6,9 @@
   transition: border-color .2s;
   font-weight: bold;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     border-bottom-color: currentColor;
   }
 }

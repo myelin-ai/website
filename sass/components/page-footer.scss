@@ -19,7 +19,9 @@
     font-weight: 600;
   }
 
-  > .content > .info > .link:hover {
+  > .content > .info > .link:hover,
+  > .content > .info > .link:focus,
+  > .content > .info > .link:active {
     text-decoration: underline;
   }
 }
