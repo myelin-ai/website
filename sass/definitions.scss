@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #428352;
+  --secondary-color: #924A6C;
+  --text-color: #292929;
+  --link-color: var(--secondary-color);
+}
+
 $color-blue: #003D75;
 $color-dark-blue: #002140;
 $color-light-blue: #ECF1F5;

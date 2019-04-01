@@ -2,6 +2,7 @@
   display: inline-flex;
   align-items: center;
   font-size: 16px;
+  color: var(--link-color);
 
   > .label {
     padding-top: 4px;
@@ -17,6 +18,6 @@
   }
 
   &:hover > .label {
-    border-bottom-color: $color-yellow;
+    border-bottom-color: currentColor;
   }
 }

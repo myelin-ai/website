@@ -1,11 +1,11 @@
 .inline-link {
+  color: var(--link-color);
   padding-top: 4px;
   padding-bottom: 2px;
   border-bottom: 2px solid transparent;
   transition: border-color .2s;
-  font-weight: 700;
 
   &:hover {
-    border-bottom-color: $color-yellow;
+    border-bottom-color: currentColor;
   }
 }
