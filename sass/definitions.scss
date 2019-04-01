@@ -19,6 +19,7 @@ $page-margin-side: 24px;
 @media (prefers-color-scheme: dark) {
   :root {
     --text-color: #fff;
+    --link-color: #fff;
     --header-background-color: rgba(0, 0, 0, .1);
     background-color: var(--black-color);
   }
