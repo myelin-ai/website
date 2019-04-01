@@ -8,6 +8,13 @@
   --heading-2-font-size: 24px;
 }
 
+@media (max-width: 930px) {
+  :root {
+    --heading-1-font-size: 40px;
+    --heading-2-font-size: 20px;
+  }
+}
+
 $color-blue: #003D75;
 $color-dark-blue: #002140;
 $color-light-blue: #ECF1F5;

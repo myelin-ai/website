@@ -52,3 +52,6 @@ github_icon = { source = "assets/github-icon.svg" }
 jeremy = { source = "assets/jeremy.jpg" }
 ruben = { source = "assets/ruben.jpg" }
 wave_line = { source = "assets/wave-line.svg" }
+brain_icon = { source = "assets/icons/brain.svg" }
+helix_icon = { source = "assets/icons/helix.svg" }
+processor_icon = { source = "assets/icons/processor.svg" }

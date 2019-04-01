@@ -1,0 +1,5 @@
+.landing-features {
+  > .landing-feature:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}

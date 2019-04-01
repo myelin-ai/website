@@ -1,0 +1,23 @@
+.landing-feature {
+  display: grid;
+  grid-template-areas: 'icon title' 'text text';
+  grid-gap: 18px 24px;
+  align-items: center;
+  grid-template-columns: min-content 1fr;
+
+  > .title {
+    grid-area: title;
+    font-size: var(--heading-2-font-size);
+  }
+
+  > .icon {
+    grid-area: icon;
+    --icon-size: 50px;
+    width: var(--icon-size);
+    height: var(--icon-size);
+  }
+
+  > .text {
+    grid-area: text;
+  }
+}
