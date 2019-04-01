@@ -55,3 +55,8 @@ wave_line = { source = "assets/wave-line.svg" }
 brain_icon = { source = "assets/icons/brain.svg" }
 helix_icon = { source = "assets/icons/helix.svg" }
 processor_icon = { source = "assets/icons/processor.svg" }
+favicon_16 = { source = "assets/favicons/favicon-16.png" }
+favicon_32 = { source = "assets/favicons/favicon-32.png" }
+favicon_128 = { source = "assets/favicons/favicon-128.png" }
+safari_mask_icon = { source = "assets/favicons/safari-mask-icon.svg" }
+apple_touch_icon = { source = "assets/favicons/apple-touch-icon.png" }
