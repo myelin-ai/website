@@ -6,8 +6,8 @@
   grid-template-columns: min-content 1fr;
 
   > .title {
+    @extend %heading-level-2;
     grid-area: title;
-    font-size: var(--heading-2-font-size);
   }
 
   > .icon {
