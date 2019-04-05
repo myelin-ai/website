@@ -18,8 +18,8 @@
   }
 
   > .name {
+    @extend %heading-level-2;
     grid-area: name;
-    font-size: var(--heading-2-font-size);
   }
 
   > .link {

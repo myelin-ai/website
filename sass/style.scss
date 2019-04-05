@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
-@import 'definitions';
+@import 'definitions.scss';
+@import 'definitions/heading-level-1.scss';
+@import 'definitions/heading-level-2.scss';
+
 @import 'fonts';
 @import 'core/reset';
 @import 'core/normalize';

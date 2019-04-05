@@ -1,4 +1,6 @@
 .content-paragraph {
+  max-width: 650px;
+
   &:not(:last-child) {
     margin-bottom: 1em;
   }
