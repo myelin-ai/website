@@ -9,6 +9,7 @@ import shutil
 TEMP_DIR = tempfile.mkdtemp()
 TARGET_BRANCH = 'gh-pages'
 PUBLIC_DIR = 'public'
+BOT_USER = 'myelin-bot'
 
 def _copytree(src, dst, symlinks=False, ignore=None):
     for item in os.listdir(src):
@@ -23,10 +24,9 @@ def _run_git_command(args: List[str]):
     subprocess.check_call(['git', '-C', TEMP_DIR, *args])
 
 def _get_remote_url() -> str:
-    #remote_url = subprocess.check_output(['git', 'remote', 'get-url', 'origin']).decode('utf-8').strip()
     github_token = os.environ['GITHUB_TOKEN']
-    #return remote_url.replace('https://', f'https://{github_token}@')
-    return f'https://myelin-bot:{github_token}@github.com/myelin-ai/website'
+    repository = os.environ['GITHUB_REPOSITORY']
+    return f'https://{BOT_USER}:{github_token}@github.com/{repository}'
     
 def _clone_repository():
     subprocess.check_call(['git', 'clone', _get_remote_url(), '--quiet', '-b', TARGET_BRANCH, TEMP_DIR])
@@ -40,7 +40,7 @@ def _copy_files_to_repository():
 def _commit_all_changes():
     commit = os.environ['GITHUB_SHA']
     _run_git_command(['add', '-A'])
-    _run_git_command(['commit', '-m', f'Build for {commit}'])
+    _run_git_command(['commit', '--allow-empty', '-m', f'Build for {commit}'])
 
 def _push():
     _run_git_command(['push'])
