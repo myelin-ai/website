@@ -18,9 +18,13 @@ jobs:
 
     - name: Build
       run: ./scripts/build.sh
+      env:
+        TERM: xterm-256color
 
     - name: Deploy
       run: python ./scripts/deploy.py
       if: github.ref == 'master'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
         
