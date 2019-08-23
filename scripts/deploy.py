@@ -23,10 +23,10 @@ def _run_git_command(args: List[str]):
     subprocess.check_call(['git', '-C', TEMP_DIR, *args])
 
 def _get_remote_url() -> str:
-    remote_url = subprocess.check_output(['git', 'remote', 'get-url', 'origin']).decode('utf-8').strip()
-    #github_token = os.environ['GITHUB_TOKEN']
+    #remote_url = subprocess.check_output(['git', 'remote', 'get-url', 'origin']).decode('utf-8').strip()
+    github_token = os.environ['GITHUB_TOKEN']
     #return remote_url.replace('https://', f'https://{github_token}@')
-    return remote_url
+    return f'https://myelin-bot:{github_token}@github.com/myelin-ai/website'
     
 def _clone_repository():
     subprocess.check_call(['git', 'clone', _get_remote_url(), '--quiet', '-b', TARGET_BRANCH, TEMP_DIR])
