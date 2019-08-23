@@ -22,7 +22,10 @@ jobs:
         TERM: xterm-256color
 
     - name: Deploy
-      run: python ./scripts/deploy.py
+      run: |
+        git config --global user.name 'Myelin Bot'
+        git config --global user.email 'github-bot@myelin.ch'
+        python ./scripts/deploy.py
       if: github.ref == 'refs/heads/master'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
