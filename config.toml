@@ -7,7 +7,7 @@ path = "/"
 file = "index"
 
 [[pages]]
-file = "_404"
+file = "404"
 title = "Page Not Found"
 
 [[pages]]
