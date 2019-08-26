@@ -26,8 +26,6 @@ jobs:
         git config --global user.name 'Myelin Bot'
         git config --global user.email 'github-bot@myelin.ch'
         python ./scripts/deploy.py
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/master' && github.repository == 'myelin-ai/website'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
-        
