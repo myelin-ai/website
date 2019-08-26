@@ -1,7 +1,5 @@
 # website
 
-[![Build Status](https://travis-ci.org/myelin-ai/website.svg?branch=master)](https://travis-ci.org/myelin-ai/website)
-
 ## Building
 
 To build SASS files and the HTML files run:
