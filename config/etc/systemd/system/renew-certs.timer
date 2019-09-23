@@ -1,8 +1,0 @@
-[Unit]
-Description=Run renew-certs.service every month
-
-[Timer]
-OnCalendar=monthly
-
-[Install]
-WantedBy=multi-user.target

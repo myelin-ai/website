@@ -1,7 +1,0 @@
-add_header X-Frame-Options deny always;
-add_header X-Xss-Protection '1; mode=block' always;
-add_header X-Content-Type-Options nosniff always;
-add_header Referrer-Policy "origin-when-cross-origin, strict-origin-when-cross-origin" always;
-add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://avatars2.githubusercontent.com; font-src 'self'; connect-src 'self' https://whitepaper.myelin.ch; media-src 'self'; object-src 'self'; plugin-types application/pdf; child-src 'none'; frame-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; disown-opener; require-sri-for script style;" always;
-add_header Feature-Policy "geolocation 'none'; midi 'none'; notifications 'none'; push 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; vibrate 'none'; fullscreen 'none'; payment 'none'" always;
-add_header Cross-Origin-Resource-Policy same-site always;

@@ -1,6 +1,0 @@
-#!/bin/sh
-
-set -e
-
-curl https://google.com/ping?sitemap=https://www.myelin.ch/sitemap.xml
-curl http://www.bing.com/ping?sitemap=https://www.myelin.ch/sitemap.xml
