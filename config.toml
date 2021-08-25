@@ -32,7 +32,7 @@ image_url = "https://avatars2.githubusercontent.com/u/9047632"
 [[additional.people]]
 name = "Ruben Schmidmeister"
 username = "bash"
-image_url = "assets://ruben"
+image_url = "https://avatars2.githubusercontent.com/u/4602612"
 
 [[additional.people]]
 name = "Mathias Fischler"
@@ -50,7 +50,6 @@ whitepaper_js = { source = "assets/whitepaper.js" }
 header_logo = { source = "assets/header-logo.svg" }
 github_icon = { source = "assets/github-icon.svg" }
 jeremy = { source = "assets/jeremy.jpg" }
-ruben = { source = "assets/ruben.jpg" }
 wave_line = { source = "assets/wave-line.svg" }
 brain_icon = { source = "assets/icons/brain.svg" }
 helix_icon = { source = "assets/icons/helix.svg" }
