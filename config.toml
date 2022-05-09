@@ -25,8 +25,8 @@ website_repo = "myelin-ai/website"
 blog_url = "https://blog.myelin.ch"
 
 [[additional.people]]
-name = "Jan Nils Ferner"
-username = "jnferner"
+name = "Jan Hohenheim"
+username = "janhohenheim"
 image_url = "https://avatars2.githubusercontent.com/u/9047632"
 
 [[additional.people]]
