@@ -23,9 +23,10 @@ jobs:
 
     - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@v3
-      path: public
+      with:
+        path: public
 
- deploy:
+  deploy:
     needs: build
     if: github.ref_name == 'main'
 
