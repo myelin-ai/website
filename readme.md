@@ -1,7 +1,5 @@
 # website
 
-[![GitHub Actions status](https://github.com/myelin-ai/website/workflows/CI/badge.svg)](https://github.com/myelin-ai/website/actions)
-
 ## Building
 
 To build SASS files and the HTML files run:
