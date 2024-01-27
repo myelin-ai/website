@@ -12,7 +12,7 @@ jobs:
     - uses: actions/setup-python@v1
       with:
         python-version: 3.7
-    
+
     - name: Install dependencies
       run: pip install -r requirements.txt
 
@@ -21,11 +21,24 @@ jobs:
       env:
         TERM: xterm-256color
 
-    - name: Deploy
-      run: |
-        git config --global user.name 'Myelin Bot'
-        git config --global user.email 'github-bot@myelin.ch'
-        python ./scripts/deploy.py
-      if: github.ref == 'refs/heads/master' && github.repository == 'myelin-ai/website'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v3
+      path: public
+
+ deploy:
+    needs: build
+    if: github.ref_name == 'main'
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
