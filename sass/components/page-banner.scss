@@ -1,0 +1,15 @@
+.page-banner {
+  font-size: .8em;
+  font-weight: 600;
+  background-color: #E8CB68;
+  color: color-mix(in srgb, #E8CB68, #000 70%);
+  box-shadow: 1px 1px 2px color-mix(in srgb, #E8CB68, #000 20%);
+  text-align: center;
+  padding: .4em;
+  position: sticky;
+  top: 0;
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 1px 1px 2px color-mix(in srgb, #E8CB68, #000 80%);
+  }
+}
